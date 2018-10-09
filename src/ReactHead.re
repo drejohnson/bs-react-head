@@ -84,11 +84,11 @@ module Style = {
 
 module HeadProvider = {
   [@bs.deriving abstract]
-  type jsProps = {headTags: array(ReasonReact.reactElement)};
+  type jsProps = {headTags: Js.nullable(array(ReasonReact.reactElement))};
   [@bs.module "react-head"]
   external head_provider: ReasonReact.reactClass = "HeadProvider";
-  let make = (~headTags, children) => {
-    let props = jsProps(~headTags);
+  let make = (~headTags=?, children) => {
+    let props = jsProps(~headTags=headTags->Js.Nullable.fromOption);
     ReasonReact.wrapJsForReason(~reactClass=head_provider, ~props, children);
   };
 };
