@@ -20,6 +20,3 @@ Add to bsconfig.json
 ]
 ```
 
-## Status 
-WIP - Doesn't work yet
-
