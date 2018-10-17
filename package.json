@@ -2,7 +2,6 @@
   "name": "bs-react-head",
   "version": "0.1.3",
   "description": "BuckleScript bindings for react-head",
-  "main": "src/ReactHead.re",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
