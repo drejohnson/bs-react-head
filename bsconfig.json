@@ -5,15 +5,8 @@
     "react-jsx": 2
   },
   "sources": {
-    "dir" : "src",
-    "subdirs" : true
+    "dir" : "src"
   },
-  "package-specs": [{
-    "module": "es6",
-    "in-source": true
-  }],
-  "suffix": ".bs.js",
-  "namespace": true,
   "bs-dependencies": [
     "reason-react"
   ],
